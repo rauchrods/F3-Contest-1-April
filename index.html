@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="maincontainer">
+        <h2>New Employees</h2>
+
+
+        <div class="inputs">
+            <div class="namecont">
+                <label for="name">Enter Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="professioncont">
+                <label for="profession">Enter Profession</label>
+                <input type="text" name="profession" id="profession">
+            </div>
+            <div class="agecont">
+                <label for="age">Enter Age</label>
+                <input type="number" name="age" id="age">
+            </div>
+        </div>
+
+        <button id="adduder">Add User</button>
+
+        <p class="status-msg">Error : Please Make sure All the fields are filled before adding in an employee !</p>
+
+        <p>Added Employees</p>
+
+        <div class="emp-li-container">
+            <p>You have 0 Employees.</p>
+            <!-- <div class="emp-card">
+                <div class="details">
+                    <span>1.</span>
+                    <span>Name: John</span>
+                    <span>Profession: Developer</span>
+                    <span>Age: 18</span> 
+                </div>
+                <button id="del-user-btn">Delete User</button>
+            </div> -->
+        </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
