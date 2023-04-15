@@ -10,12 +10,7 @@ let Users = [];
 
 
 adduserbtn.addEventListener("click", ()=>{
-    // console.log("yo");
-
-    // console.log( namev.value);
-    // console.log( profession.value);
-    // console.log( age.value);
-    
+   
     if(namev.value=="" || profession.value=="" || age.value=="" ){
         // console.log("hi");
         statusmsg.innerHTML = "Error : Please Make sure All the fields are filled before adding in an employee !"
@@ -81,4 +76,17 @@ function deleteUser(del_id){
     console.log(Users);
     printUsers();
     alert("User deleted sucessfully");
+    checkEmptyUsers();
 }
+
+function checkEmptyUsers(){
+    let emplicont = document.querySelector(".emp-li-container");
+
+    if(emplicont.innerHTML.trim()==""){
+
+        emplicont.innerHTML =  "<p>You have 0 Employees.</p>"
+    }
+    
+};
+
+checkEmptyUsers();
